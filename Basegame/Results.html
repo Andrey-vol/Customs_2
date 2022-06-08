@@ -5,11 +5,11 @@
 {{ block content }}
 Ваш выигрыш составил
 {% if player.id_in_group == 1 %}
-            Вы заработали с этого взаимодействия <strong>{{ group.p1.payoff }}</strong> рублей.
+Вы заработали с этого взаимодействия <strong>{{player.payoff}}</strong> рублей.
         {% else %}
-            Вы заработали с этого взаимодействия <strong>{{ group.p2.payoff }}</strong> рублей.
+Вы заработали с этого взаимодействия <strong>{{player.payoff}}</strong> рублей.
+
         {% endif %}
     {{ next_button }}
 {{ endblock }}
-
 
